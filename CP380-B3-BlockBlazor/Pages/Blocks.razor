@@ -3,6 +3,7 @@
 @using CP380_B1_BlockList.Models
 @using CP380_B3_BlockBlazor.Data
 @inject BlockService BlockService
+@inject MiningService miningService
 <h3>Blocks</h3>
 
 @if (blocklist == null)
@@ -26,7 +27,7 @@ else
         }
         @foreach (var values in blocklist)
         {
-            <div class="card">            
+            <div class="card">
                 <div class="card-body">
                     Position: @i
                     <p class="card-text">Hash: @values.Hash</p>
@@ -43,10 +44,22 @@ else
 @code {
     IEnumerable<Block> blocklist;
 
+    Block block;
+
     protected override async Task OnInitializedAsync()
     {
         // TODO: fetch blocks from the BlockService
 
         blocklist = await BlockService.ListBlocks();
+
+        block = await miningService.MineBlock();
     }
+    private async Task HandleValidSubmit()
+    {
+
+        var res = await BlockService.SubmitNewBlockAsync(block);
+        blocklist = await BlockService.ListBlocks();
+
+    }
+   
 }
