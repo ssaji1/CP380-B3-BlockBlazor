@@ -5,4 +5,12 @@
     <RootNamespace>CP380_B3_BlockBlazor</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CP380-B1-BlockList\CP380-B1-BlockList\CP380-B1-BlockList.csproj" />
+  </ItemGroup>
+
 </Project>

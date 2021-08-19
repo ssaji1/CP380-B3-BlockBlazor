@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP380-B3-BlockBlazor", "CP380-B3-BlockBlazor\CP380-B3-BlockBlazor.csproj", "{8F2C26AD-6389-4B6C-AFEC-7C57361971A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CP380-B3-BlockBlazor", "CP380-B3-BlockBlazor\CP380-B3-BlockBlazor.csproj", "{8F2C26AD-6389-4B6C-AFEC-7C57361971A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CP380-B1-BlockList", "CP380-B1-BlockList\CP380-B1-BlockList\CP380-B1-BlockList.csproj", "{53D4BFEE-E095-46EC-AC53-0E18B8086A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8F2C26AD-6389-4B6C-AFEC-7C57361971A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F2C26AD-6389-4B6C-AFEC-7C57361971A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F2C26AD-6389-4B6C-AFEC-7C57361971A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D4BFEE-E095-46EC-AC53-0E18B8086A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D4BFEE-E095-46EC-AC53-0E18B8086A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D4BFEE-E095-46EC-AC53-0E18B8086A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D4BFEE-E095-46EC-AC53-0E18B8086A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
